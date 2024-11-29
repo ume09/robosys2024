@@ -1,0 +1,80 @@
+#!/usr/bin/python3
+
+import sys
+
+def big5_test():
+    # 質問リスト
+    questions = {
+        "外向性": [
+            "活発で、外交的だと思う",
+            "控えめでおとなしいと思う"
+        ],
+        "協調性": [
+            "人に気を遣う優しい人間だと思う",
+            "他人に不満を持ちもめ事を起こしやすいと思う"
+        ],
+        "勤勉性": [
+            "しっかりしていて自分に厳しいと思う",
+            "だらしなくうっかりしている"
+        ],
+        "神経症的傾向": [
+            "心配性でうろたえやすい",
+            "冷静で気分が安定している"
+        ],
+        "開放性": [
+            "新しいことが好き",
+            "発想力にかけた平凡な人間だと思う"
+        ],
+    }
+
+    scores = {trait: [] for trait in questions}
+
+    # 標準入力からデータを取得
+    try:
+        input_data = sys.stdin.read().strip().split()
+        input_data = [int(x) for x in input_data]  # 数値に変換
+    except ValueError:
+        print("エラー: 入力に数値以外が含まれています。1～7の数字を入力してください。")
+        sys.exit(1)
+
+    # 入力値を検証
+    if not all(1 <= x <= 7 for x in input_data):
+        print("エラー: 1～7以外の数字が入力されています。")
+        sys.exit(1)
+
+    # 質問数が一致しているかチェック
+    expected_answers = sum(len(qs) for qs in questions.values())
+    if len(input_data) != expected_answers:
+        print(f"エラー: 入力データの数が正しくありません。{expected_answers} 個の回答を入力してください。")
+        sys.exit(1)
+
+    # 回答
+    n = 0
+    for trait, qs in questions.items():
+        for q in qs:
+            answer = input_data[n]
+            n += 1
+            scores[trait].append(answer)  # スコアに追加
+
+    # 診断結果を計算
+    print("\n診断結果:")
+    results = []
+    for trait, answers in scores.items():
+        custom_score = (answers[0] + (8 - answers[1])) / 2
+        result = f"{trait}: {custom_score:.2f} / 5.00"
+        print(result)
+        results.append(result)
+
+    # 結果をファイルに保存
+    filename = "big5_results.txt"
+    try:
+        with open(filename, "w", encoding="utf-8") as file:
+            file.write("BIG5 性格診断結果（カスタム計算）\n")
+            file.write("\n".join(results))
+            file.write("\n")
+        print(f"\n診断結果を '{filename}' に保存しました。")
+    except IOError:
+        print("\n診断結果の保存に失敗しました。")
+
+# 診断を実行
+big5_test()
