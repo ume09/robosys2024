@@ -136,9 +136,10 @@ echo "1 2 3 4 1 2 2 4 1 4 " |./big-5
 - [【Python入門】行列の基礎から実際の活用方法まで！](https://www.sejuku.net/blog/75248)
 
 - [日本語版 Ten Item Personality Inventory(TIPI−J)作成の試み
-小塩真司・阿部晋吾・カトロ−ニ ピノ (2012).
+小塩真司・阿部晋吾・カトロ−ニ ピノ (2012).]
 パ−ソナリティ研究, 21, 40−52.](https://www.jstage.jst.go.jp/article/personality/21/1/21_40/_article/-char/ja/)
 
 
 ##本格的にBIG-5診断をしたい人用
+
 ビッグファイブ性格診断  BIG5-BASIC(https://big5-basic.com/front/index.php?route=logic/diagnosis) 
