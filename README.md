@@ -13,7 +13,7 @@ BIG5-BASICという性格診断を簡易的に行うプログラムです。
 また結果を"big5_results.txt"として保存します。
 
 
-##　使用する前に行うこと
+## 使用する前に行うこと
 
 以下の手順でローカル環境にインストールしてください。
 
@@ -96,7 +96,7 @@ echo "1 2 3 4 1 2 2 4 1 4 " |./big-5
  - テスト済み:3.7~3.10
 
 
-##　テスト環境
+## テスト環境
 
 -  Ubuntu-latest\ubuntu-20.04.5LTS
 
@@ -111,7 +111,7 @@ echo "1 2 3 4 1 2 2 4 1 4 " |./big-5
 © 2024 Umehara　Hidetaka
 
 
-#　参考資料
+## 参考資料
 
 -「いちばんやさしいPython入門教室」著:大澤文孝 2019/8/10初版第６刷発行
 
@@ -140,6 +140,6 @@ echo "1 2 3 4 1 2 2 4 1 4 " |./big-5
 パ−ソナリティ研究, 21, 40−52.](https://www.jstage.jst.go.jp/article/personality/21/1/21_40/_article/-char/ja/)
 
 
-##　本格的にBIG-5診断をしたい人用
+## 本格的にBIG-5診断をしたい人用
 
 ビッグファイブ性格診断  BIG5-BASIC(https://big5-basic.com/front/index.php?route=logic/diagnosis) 
