@@ -39,12 +39,12 @@ def big5_test():
         print("エラー: 入力に数値以外が含まれています。1～7の数字を入力してください。")
         sys.exit(1)
 
-    # 入力値を検証
+    # 入力値
     if not all(1 <= x <= 7 for x in input_data):
         print("エラー: 1～7以外の数字が入力されています。")
         sys.exit(1)
 
-    # 質問数が一致しているかチェック
+    # 質問数
     expected_answers = sum(len(qs) for qs in questions.values())
     if len(input_data) != expected_answers:
         print(f"エラー: 入力データの数が正しくありません。{expected_answers} 個の回答を入力してください。")
@@ -56,7 +56,7 @@ def big5_test():
         for q in qs:
             answer = input_data[n]
             n += 1
-            scores[trait].append(answer)  # スコアに追加
+            scores[trait].append(answer)  
 
     # 診断結果を計算
     print("\n診断結果:")
