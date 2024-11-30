@@ -67,16 +67,6 @@ def big5_test():
         print(result)
         results.append(result)
 
-    # 結果をファイルに保存
-    filename = "big5_results.txt"
-    try:
-        with open(filename, "w", encoding="utf-8") as file:
-            file.write("BIG5 性格診断結果（カスタム計算）\n")
-            file.write("\n".join(results))
-            file.write("\n")
-        print(f"\n診断結果を '{filename}' に保存しました。")
-    except IOError:
-        print("\n診断結果の保存に失敗しました。")
-
+   
 # 診断を実行
 big5_test()
