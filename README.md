@@ -130,7 +130,7 @@ echo "1 2 3 4 1 2 2 4 1 4 " |./big-5
 
 - [C言語のEOFをマスター！7つのポイントで理解する](https://jp-seemore.com/iot/10847/#toc3)
 
--　[【Python】標準入力でキーボードからデータを受け取り（sys.stdin.readlines、input関数）](https://python.joho.info/tutorial/python-sys-stdin-readline/)
+- [【Python】標準入力でキーボードからデータを受け取り（sys.stdin.readlines、input関数）](https://python.joho.info/tutorial/python-sys-stdin-readline/)
 
 - [素敵なREADMEの書き方](https://qiita.com/koeri3/items/f85a617dcb6efebb2cab)
 
