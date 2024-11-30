@@ -98,7 +98,7 @@ echo "1 2 3 4 1 2 2 4 1 4 " |./big-5
 
 ## テスト環境
 
--  Ubuntu-latest\ubuntu-20.04.5LTS
+-  Ubuntu-latest\ubuntu-22.04.5LTS
 
 
 ## ライセンス
