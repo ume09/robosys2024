@@ -106,7 +106,8 @@ echo "1 2 3 4 1 2 2 4 1 4 " |./big-5
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 
 - このパッケージのコードは，big-5,test.bashを除き、下記のスライド（CC-BY-SA 4.0 by ryuichi ueda）のものを，本人の許可を得て自身の著作としたものです．
-  - https://github.com/ryuichiueda/slides_marp/tree/master/robosys2024
+  
+  -　ryuichiueda/my_slides robosys_2022
 
 © 2024 Hidetaka Umehara
 
